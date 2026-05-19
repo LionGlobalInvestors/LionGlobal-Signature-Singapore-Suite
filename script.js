@@ -4,135 +4,113 @@ class Quiz {
     this.QUIZ = [
       {
         image: `quiz-Q1.jpg`,
-        question: `As you prepare to embark on a 14 days trip, you pack your bag. <br> How much clothing do you pack?`,
+        question: `You step into a restaurant after enduring a storm. How are you feeling?`,
         answers: {
-          Wealth: `Bring only 2 - 3 sets of clothes`,
-          Capital: `Pack extra clothing for weather changes`,
-          Legacy: `Pack an outfit for each day`,
-          Income: `Bring 5 sets of clothes and buy any if needed`,
+          HighRisk: `Great! - Revitalised, excited to dig in!`,
+          LeastRisk: `A little shaken by the weather - need to take a minute before you order`,
+          LowRisk: `I'm okay - just waiting to get a seat`,
+          ModerateRisk: `Feeling good - ready to head in and browse the menu`,
         },
       },
       {
         image: `quiz-Q2.jpg`,
-        question: `Who is coming with you on your trip?`,
+        question: `Your reservation has been confirmed, but your table is not ready, and the restaurant looks crowded tonight. What's your reaction?`,
         answers: {
-          Capital: `2 - 3 friends to split the cost`,
-          Legacy: `Bring the whole kampong of family and / or friends`,
-          Wealth: `Traveling solo for adventure`,
-          Income: `Join a tour group for convenience`,
+          LeastRisk: `Feel reassured that your spot has been confirmed and wait patiently`,
+          LowRisk: `Ask how long the wait will be`,
+          HighRisk: `Insist on being moved to an available seat to start dining immediately`,
+          ModerateRisk: `Ask if there are any other alternate seats that are available at the moment`,
         },
       },
       {
         image: `quiz-Q3.jpg`,
-        question: `It's time to head to the airport. <br> When do you reach the airport?`,
+        question: `The waiter comes over as you take a seat. He asks if you are craving anything and you respond with...`,
         answers: {
-          Legacy: `3 hours early to go shopping/eating`,
-          Capital: `3 hours early because kiasu`,
-          Income: `2 hours before to be just right on time`,
-          Wealth: `1 hour before the flight`,
+          LowRisk: `Give me the crowd's favourite`,
+          LeastRisk: `Give me the signature dish`,
+          ModerateRisk: `What dish do you recommend?`,
+          HighRisk: `Surprise me!`,
         },
       },
       {
         image: `quiz-Q4.jpg`,
-        question: `You're told that your flight will be delayed by 10 hours. <br> What do you do first?`,
+        question: `Before leaving, he asks about how you like the pacing of your meals being served, and you answer with...`,
         answers: {
-          Income: `Wait patiently for the delayed flight`,
-          Wealth: `Pay extra to get onto the next available flight`,
-          Capital: `Check how much can be claimed from travel insurance`,
-          Legacy: `Request for meal allowance from the airline`,
+          ModerateRisk: `No preferences`,
+          HighRisk: `Pay extra to get onto the next available flight`,
+          LeastRisk: `I'll let you know when I am done with each dish`,
+          LowRisk: `Serve immediately when ready!`,
         },
       },
       {
         image: `quiz-Q5.jpg`,
-        question: `Your flight has started boarding and you're feeling hungry. <br> What do you do?`,
+        question: `The appetizer has arrived but wait! You notice an unexpected ingredient. What's your reaction?`,
         answers: {
-          Wealth: `Eat at a restaurant in the transit area believing you can finish in 15 minutes`,
-          Capital: `Eat the packed food in your backpack`,
-          Legacy: `Get a snack at the convenience store and eat while waiting to board`,
-          Income: `Wait for the in-flight meal`,
+          HighRisk: `Go for it and enjoy the surprise without hesitation`,
+          LeastRisk: `Ask if the dish could be served without it`,
+          LowRisk: `Ask the waiter about the taste before deciding`,
+          ModerateRisk: `Take a sniff and a small bite to test if you like it`,
         },
       },
       {
-        image: `transition_1.jpg`,
-        isTransition1: true,
-        question: ``,
-        answers: {
-        },
-      },
-      { // plane departure
-        image: `departure.gif`,
-        isTransition2: true,
-        question: ``,
-        answers: {
-        },
-      },
-      {
-        isTransition2: false,
         image: `quiz-Q6.jpg`,
-        question: `What do you do most on a 10-hour red eye flight?`,
+        question: `You're digging into the main dish but you don't like the taste. What do you do?`,
         answers: {
-          Wealth: `Binge-watch`,
-          Legacy: `Listen to music`,
-          Capital: `Read a book`,
-          Income: `Sleep`,
-        },
-      },
-      // landing gif
-      {
-        image: `landing.gif`,
-        isTransition3: true,
-        question: ``,
-        answers: {
+          HighRisk: `Let the waiter know and give your feedback`,
+          LowRisk: `Ask for garnish`,
+          LeastRisk: `Stop eating`,
+          ModerateRisk: `Request for a different dish`,
         },
       },
       {
         image: `quiz-Q7.jpg`,
-        question: `The plane has landed, and everyone is rushing to get out. What do you do?`,
+        question: `You've just finished your main meal, and your stomach starts to feel full...but you have one more dish to go. What would you do?`,
         answers: {
-          Wealth: `Stand up quickly to get ahead of the line`,
-          Legacy: `Wait for everyone to get out before you do`,
-          Capital: `Stay seated and wait for the line to move before joining`,
-          Income: `Join the crowd but move at a steady pace`,
+          HighRisk: `Inform the waiter that you will just pass`,
+          LowRisk: `Ask the waiter to delay the meal - I need time to digest`,
+          LeastRisk: `Ask for a takeaway container - I can just finish it at home!`,
+          ModerateRisk: `Bring forth the dessert! - I can handle it`,
         },
       },
       {
         image: `quiz-Q8.jpg`,
-        question: `At the baggage claim, you notice someone struggling to lift their luggage. <br> Do you:`,
+        question: `At the end, the chef asks about how you felt about the overall experience. How would you respond?`,
         answers: {
-          Legacy: `Offer to help them`,
-          Income: `Take your luggage quickly and join your group`,
-          Capital: `Look around to see if anyone else is offering help`,
-          Wealth: `Intuitively take their luggage for them`,
+          LowRisk: `Tell him your favourite part of the experience`,
+          ModerateRisk: `Share what you enjoyed along with some suggestions`,
+          LeastRisk: `"Everything was good." - You keep things simple and polite`,
+          HighRisk: `Give your honest, detailed feedback and suggest improvements`,
         },
       },
-      { //only show when got tie-breaker
-        image: `quiz-Q9.jpg`,
-        question: `You are at the end of your trip, what souvenirs do you bring home? `,
-        answers: {
-          Capital: `Just the photos/memories`,
-          Wealth: `Unique collectibles / local crafts`,
-          Income: `Popular local specialties purchased during the tour`,
-          Legacy: `Local snacks for family and friends`,
-        },
-      },
+      // { //only show when got tie-breaker
+      //   image: `quiz-Q9.jpg`,
+      //   question: `You are at the end of your trip, what souvenirs do you bring home? `,
+      //   answers: {
+      //     LeastRisk: `Just the photos/memories`,
+      //     HighRisk: `Unique collectibles / local crafts`,
+      //     ModerateRisk: `Popular local specialties purchased during the tour`,
+      //     LowRisk: `Local snacks for family and friends`,
+      //   },
+      // },
     ].map((v, i) => ({ ...v, id: i + 1 }));
 
+    //change this to point system
     this.RESULT = [
       {
-        url: "result-capital-preservation.html",
-        format: "CAPITAL PRESERVATION",
+        url: "result-LeastRisk-preservation.html",
+        format: "LeastRisk PRESERVATION",
       },
       {
-        url: "result-wealth-accumulation.html",
-        format: "WEALTH ACCUMULATION",
+        url: "result-HighRisk-accumulation.html",
+        format: "HighRisk ACCUMULATION",
       },
       {
-        url: "result-income-generation.html",
-        format: "INCOME GENERATION",
+        url: "result-ModerateRisk-generation.html",
+        format: "ModerateRisk GENERATION",
       },
       {
-        url: "result-legacy-planning.html",
-        format: "LEGACY PLANNING",
+        url: "result-LowRisk-planning.html",
+        format: "LowRisk PLANNING",
       },
     ].map((v, i) => ({
       ...v,
@@ -159,7 +137,7 @@ class Quiz {
       const isLastQuiz = quizID >= this.QUIZ.length-1;
 
       if (quizData) {
-        document.title = `Retirement Quiz | Lion Global Investors`;
+        document.title = `LionGlobal Signature Singapore Suite Quiz | Lion Global Investors`;
 
         const quizRender = document.getElementById("quiz-render");
 
@@ -209,15 +187,6 @@ class Quiz {
               });
             });
           }
-          if (quizData.isTransition1) {
-            this.slideUpBoardingPass();
-          }
-          else if (quizData.isTransition2) {
-            this.pulsingPlaneButton1();
-          }
-          else if (quizData.isTransition3) {
-            this.pulsingPlaneButton2();
-          }
         }
       }
     }
@@ -239,65 +208,7 @@ class Quiz {
       });
     }
   }
-  
-  slideUpBoardingPass() {
-    const boardingPassImage = document.createElement("img");
-    const quizRender = document.getElementById("quiz-render");
-    quizRender.appendChild(boardingPassImage);
-    // give it animate class that is in styles.css
-    setTimeout(() => {
-      boardingPassImage.classList.add("animate");
-    }, 100);
-    setTimeout(() => {
-      // destroy the boardingPass + move on after 2000ms/2s
-      boardingPassImage.remove();
-      this.renderQuiz(this.currentQuizID + 1);
-      this.currentQuizID += 1
-    }, 2000);
-  }
 
-  pulsingPlaneButton1() {
-    // const nextQuiz = () => {
-    //   this.renderQuiz(this.currentQuizID + 1);
-    //   this.currentQuizID += 1;
-    //   document.removeEventListener("click", nextQuiz);
-    // };
-    // document.addEventListener("click", nextQuiz);
-
-    setTimeout(() => {
-      this.renderQuiz(this.currentQuizID + 1);
-      this.currentQuizID += 1
-    }, 4500);
-
-    const audio = new Audio('audio/takeoff_edit.mp3');
-    audio.loop = false;
-    audio.volume = 0.2;
-    
-
-    audio.play();
-
-  }
-
-  pulsingPlaneButton2() {
-    // const nextQuiz = () => {
-    //   this.renderQuiz(this.currentQuizID + 1);
-    //   this.currentQuizID += 1;
-    //   document.removeEventListener("click", nextQuiz);
-    // };
-    // document.addEventListener("click", nextQuiz);
-
-    setTimeout(() => {
-      this.renderQuiz(this.currentQuizID + 1);
-      this.currentQuizID += 1
-    }, 4000);
-
-    const audio = new Audio('audio/landing_edit.mp3');
-    audio.loop = false;
-    audio.volume = 0.2;
-    
-
-    audio.play();
-  }
 
   showResult() {
     console.log("showResult => userAnswers -", this.userAnswers);
@@ -315,88 +226,88 @@ class Quiz {
   
       console.log("Dominant Categories:", dominantCategories);
   
-      let dominantCategory;
+      // let dominantCategory;
   
-      if (dominantCategories.length > 1) {
-        console.log("Tie detected, initiating tiebreaker...");
+      // if (dominantCategories.length > 1) {
+      //   console.log("Tie detected, initiating tiebreaker...");
   
-        const quizRender = document.getElementById("quiz-render");
+      //   const quizRender = document.getElementById("quiz-render");
   
-        if (quizRender) {
-          const tiebreakerQuiz = this.QUIZ.find(
-            (quiz) =>
-              quiz.question ===
-              "You are at the end of your trip, what souvenirs do you bring home? "
-          );
+      //   if (quizRender) {
+      //     const tiebreakerQuiz = this.QUIZ.find(
+      //       (quiz) =>
+      //         quiz.question ===
+      //         "You are at the end of your trip, what souvenirs do you bring home? "
+      //     );
   
-          if (tiebreakerQuiz) {
-            const filteredAnswers = Object.fromEntries(
-              Object.entries(tiebreakerQuiz.answers).filter(([key]) =>
-                dominantCategories.includes(key)
-              )
-            );
-            quizRender.innerHTML = `
-              <div class="uk-card quiz-card">
-              <div class="ans-banner-container">
-                <img class="quiz-cover-image" src="pic/${tiebreakerQuiz.image}" alt="Tiebreaker Question">
-              </div>
-              <div class="quiz-info">
-                <p class="quiz-desc">
+      //     if (tiebreakerQuiz) {
+      //       const filteredAnswers = Object.fromEntries(
+      //         Object.entries(tiebreakerQuiz.answers).filter(([key]) =>
+      //           dominantCategories.includes(key)
+      //         )
+      //       );
+      //       quizRender.innerHTML = `
+      //         <div class="uk-card quiz-card">
+      //         <div class="ans-banner-container">
+      //           <img class="quiz-cover-image" src="pic/${tiebreakerQuiz.image}" alt="Tiebreaker Question">
+      //         </div>
+      //         <div class="quiz-info">
+      //           <p class="quiz-desc">
                 
-                </p>
-                <div class="quiz-options">
-                  ${Object.entries(filteredAnswers)
-                    .map(
-                      ([key, value]) => `
-                        <div class="quiz-option">
-                          <input id="tiebreaker-${key}" type="radio" name="tiebreaker" value="${key}">
-                          <label for="tiebreaker-${key}">
-                            ${value}
-                          </label>
-                        </div>`
-                    )
-                    .join("")}
-                </div>
-              </div>
-            </div>`;
-            const tiebreakerOptions = document.querySelectorAll(".quiz-option input");
+      //           </p>
+      //           <div class="quiz-options">
+      //             ${Object.entries(filteredAnswers)
+      //               .map(
+      //                 ([key, value]) => `
+      //                   <div class="quiz-option">
+      //                     <input id="tiebreaker-${key}" type="radio" name="tiebreaker" value="${key}">
+      //                     <label for="tiebreaker-${key}">
+      //                       ${value}
+      //                     </label>
+      //                   </div>`
+      //               )
+      //               .join("")}
+      //           </div>
+      //         </div>
+      //       </div>`;
+      //       const tiebreakerOptions = document.querySelectorAll(".quiz-option input");
   
-            if (tiebreakerOptions.length > 0) {
-              tiebreakerOptions.forEach((option) => {
-                option.addEventListener("change", () => {
-                  tiebreakerOptions.forEach((el) => el.setAttribute("disabled", true));
+      //       if (tiebreakerOptions.length > 0) {
+      //         tiebreakerOptions.forEach((option) => {
+      //           option.addEventListener("change", () => {
+      //             tiebreakerOptions.forEach((el) => el.setAttribute("disabled", true));
   
-                  const selectedInput = document.querySelector(".quiz-option input:checked");
+      //             const selectedInput = document.querySelector(".quiz-option input:checked");
   
-                  if (selectedInput) {
-                    dominantCategory = selectedInput.value;
-                    console.log("Tiebreaker Winner:", dominantCategory);
+      //             if (selectedInput) {
+      //               dominantCategory = selectedInput.value;
+      //               console.log("Tiebreaker Winner:", dominantCategory);
   
-                    this.processResult(dominantCategory);
-                  }
-                });
-              });
-            }
-          } else {
-            console.error("Tiebreaker question not found in QUIZ data.");
-          }
-        }
-      } else {
-        dominantCategory = dominantCategories[0];
-        console.log("Dominant Category:", dominantCategory);
+      //               this.processResult(dominantCategory);
+      //             }
+      //           });
+      //         });
+      //       }
+      //     } else {
+      //       console.error("Tiebreaker question not found in QUIZ data.");
+      //     }
+      //   }
+      // } else {
+      //   dominantCategory = dominantCategories[0];
+      //   console.log("Dominant Category:", dominantCategory);
   
-        const resultData = this.RESULT.find(
-          (r) => r.format.toLowerCase().includes(dominantCategory.toLowerCase())
-        );
+      //   const resultData = this.RESULT.find(
+      //     (r) => r.format.toLowerCase().includes(dominantCategory.toLowerCase())
+      //   );
   
-        console.log("Result Data:", resultData);
+      //   console.log("Result Data:", resultData);
   
-        if (resultData) {
-          location.href = resultData.url;
-        } else {
-          console.error("No matching result found.");
-        }
-      }
+      //   if (resultData) {
+      //     location.href = resultData.url;
+      //   } else {
+      //     console.error("No matching result found.");
+      //   }
+      // }
     }
   }  
   
