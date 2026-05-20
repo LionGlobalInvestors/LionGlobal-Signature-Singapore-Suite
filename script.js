@@ -37,9 +37,9 @@ class Quiz {
         question: `Before leaving, he asks about how you like the pacing of your meals being served, and you answer with...`,
         answers: {
           ModerateRisk: `No preferences`,
-          HighRisk: `Pay extra to get onto the next available flight`,
+          HighRisk: `Serve immediately when ready!`,
           LeastRisk: `I'll let you know when I am done with each dish`,
-          LowRisk: `Serve immediately when ready!`,
+          LowRisk: `lowRisk option`,
         },
       },
       {

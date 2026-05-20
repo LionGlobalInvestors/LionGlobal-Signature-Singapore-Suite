@@ -24,10 +24,10 @@
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Restaurant Critic | Lion Global Investors</title>
+  <title>Adventurous Foodie | Lion Global Investors</title>
 
   <!-- Open Graph Title -->
-  <meta property="og:title" content="Restaurant Critic  | Lion Global Investors">
+  <meta property="og:title" content="Adventurous Foodie | Lion Global Investors">
 
   <!-- Optional: Specify the type of content -->
   <meta property="og:type" content="website">
@@ -39,7 +39,7 @@
   <link rel="prefetch" href="pic/results-anim.gif">
 
   <link rel="prefetch" href="results/result5.png">
-  <link rel="prefetch" href="results/critic.png">
+  <link rel="prefetch" href="results/foodie.png">
 
   <meta property="og:description" content="Here's my Profile! What's yours?" />
   <!-- <meta property="og:image" content="https://lionglobalinvestors.github.io/SG-Gamification/pic/start.jpg" /> -->
@@ -84,9 +84,9 @@
 
           <!-- <img id="random-result" class="main-img ans-banner-img" alt="Restaurant Critic"> -->
 
-          <img id="result-img" class="main-img" src="results/restaurant_critic.jpg" alt="Restaurant Critic">
+          <img id="result-img" class="main-img" src="results/adventurous_foodie2.jpg" alt="Restaurant Critic">
 
-          <img id="result-img" class="main-img" src="results/breakdown_10.jpg" alt="Gold DivEQ">
+          <img id="result-img" class="main-img" src="results/breakdown_7.jpg" alt="Gold DivEQ">
 
           <!-- <img id="random-result" class="main-img ans-banner-img" alt="Capital Preservation"> -->
 
@@ -99,7 +99,7 @@
               
             </a> -->
 
-            <a href="https://www.lionglobalinvestors.com/en/fund-centre.html?&search=singapore%20trust" class="btn-one" target="_blank">
+            <a href="https://www.lionglobalinvestors.com/en/fund-centre.html?&search=dividend%20equity" class="btn-one" target="_blank">
               <button class="fundCentre-button">
 
                 Enquire about this fund option
@@ -152,7 +152,7 @@
 </html>
 
 <script>
-  var finalPic = 'results/save/restaurant_critic.jpg';
+  var finalPic = 'results/save/adventurous_foodie2.jpg';
   // var selectedPic = null;
 
   // var images = [
@@ -177,7 +177,7 @@ function Transition() {
     ansWrapper.style.alignItems = 'flex-start';
     document.getElementById('disclaimer').style.display = 'block';
     document.getElementById('footer-buttons').style.display = 'block';
-    // document.getElementById('capitalFunds').style.display = 'block';
+    document.getElementById('capitalFunds').style.display = 'block';
   }, 3000);
 }
 
@@ -247,7 +247,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("shareURL").addEventListener("click", async (event) => {
     event.preventDefault(); // prevent default <a> behavior
 
-    const shareMessage = `I am a Restaurant Critic. What's yours? Find out your Diner Profile here: https://lionglobalinvestors.github.io/LionGlobal-Signature-Singapore-Suite/`;
+    const shareMessage = `I am an Adventurous Foodie. What's yours? Find out your Diner Profile here: https://lionglobalinvestors.github.io/SG-Campaign-Gamification/`;
 
     try {
       await navigator.clipboard.writeText(shareMessage);
