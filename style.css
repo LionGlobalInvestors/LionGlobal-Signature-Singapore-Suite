@@ -627,7 +627,7 @@ footer a {
     width: 100%;
     left: 0;
     bottom: 8%;
-    z-index: 3;
+    /* z-index: 3; */
 
 }
 
