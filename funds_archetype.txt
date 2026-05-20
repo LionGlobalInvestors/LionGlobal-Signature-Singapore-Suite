@@ -16,7 +16,7 @@ High Risk: +4
 8 - 11: MMF | SDBF
 12 - 13: SDBF | MMF
 14 - 15: SDBF | Gold
-16 - 17: Gold | SDBF
+16 - 17: Gold | SDBF //stop
 18 - 19: Gold | Div EQ
 20 - 21: Div EQ | Gold
 22 - 23: Div EQ | SLC

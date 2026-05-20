@@ -41,7 +41,7 @@
   <link rel="prefetch" href="results/result5.png">
   <link rel="prefetch" href="results/critic.png">
 
-  <meta property="og:description" content="Here's my Traveller Profile! What's yours?" />
+  <meta property="og:description" content="Here's my Profile! What's yours?" />
   <!-- <meta property="og:image" content="https://lionglobalinvestors.github.io/SG-Gamification/pic/start.jpg" /> -->
   <!-- <meta property="og:url" content="https://lionglobalinvestors.github.io/SG-Gamification/index.html" /> -->
   <meta property="og:type" content="website" />
@@ -84,9 +84,9 @@
 
           <!-- <img id="random-result" class="main-img ans-banner-img" alt="Restaurant Critic"> -->
 
-          <img id="result-img" class="main-img" src="results/critic.png" alt="Restaurant Critic">
+          <img id="result-img" class="main-img" src="results/restaurant_critic.jpg" alt="Restaurant Critic">
 
-          <img id="result-img" class="main-img" src="results/result5.png" alt="Gold DivEQ">
+          <img id="result-img" class="main-img" src="results/breakdown_10.jpg" alt="Gold DivEQ">
 
           <!-- <img id="random-result" class="main-img ans-banner-img" alt="Capital Preservation"> -->
 
@@ -152,7 +152,7 @@
 </html>
 
 <script>
-  var finalPic = 'results/critic.png';
+  var finalPic = 'results/save/restaurant_critic.jpg';
   // var selectedPic = null;
 
   // var images = [
@@ -177,7 +177,7 @@ function Transition() {
     ansWrapper.style.alignItems = 'flex-start';
     document.getElementById('disclaimer').style.display = 'block';
     document.getElementById('footer-buttons').style.display = 'block';
-    document.getElementById('capitalFunds').style.display = 'block';
+    // document.getElementById('capitalFunds').style.display = 'block';
   }, 3000);
 }
 
@@ -247,7 +247,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("shareURL").addEventListener("click", async (event) => {
     event.preventDefault(); // prevent default <a> behavior
 
-    const shareMessage = `I am a Restaurant Critic. What's yours? Find out your Diner Profile here: https://lionglobalinvestors.github.io/SG-Campaign-Gamification/`;
+    const shareMessage = `I am a Restaurant Critic. What's yours? Find out your Diner Profile here: https://lionglobalinvestors.github.io/LionGlobal-Signature-Singapore-Suite/`;
 
     try {
       await navigator.clipboard.writeText(shareMessage);

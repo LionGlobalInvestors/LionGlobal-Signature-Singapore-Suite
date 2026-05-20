@@ -475,7 +475,7 @@
 }
 
 .spacer {
-    height: 10vh;
+    height: 7vh;
 }
 
 .disclaimer::-webkit-scrollbar {
@@ -1278,6 +1278,14 @@ footer a {
         left: -5vw;
         width: 150px;
     }
+
+    .btn-one {
+        bottom: 315px;
+    }
+
+    .btn-two {
+        top: 60px;
+    }
 }
 
 @media screen and (max-width: 390px){
@@ -1310,6 +1318,14 @@ footer a {
         font-size: 11px;
         width: auto;
     }
+
+    /* .btn-one {
+        bottom: 65px;
+    }
+
+    .btn-two {
+        bottom: 0;
+    } */
 }
 
 @media screen and (max-width: 320px){

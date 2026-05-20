@@ -122,13 +122,13 @@ class Quiz {
       { min: 8,  max: 11, url: "result-picky-eater.html" }, // MMF | SDBF
       { min: 12, max: 13, url: "result-menu-planner1.html" }, // SDBF | MMF
       { min: 14, max: 15, url: "result-menu-planner2.html" }, // SDBF | Gold
-      { min: 16, max: 17, url: "result-classic-lover.html" }, // Gold | SDBF
-      { min: 18, max: 19, url: "result-restaurant-critic.html" }, // Gold | DivEQ
+      { min: 16, max: 17, url: "result-classic-lover1.html" }, // Gold | SDBF
+      { min: 18, max: 19, url: "result-class-lover2.html" }, // Gold | DivEQ
       { min: 20, max: 21, url: "result-adventurous-foodie1.html" }, // DivEQ | Gold
       { min: 22, max: 23, url: "result-adventurous-foodie2.html" }, // DivEQ | SLC
-      { min: 24, max: 25, url: "result-SLC-DivEQ.html" }, // SLC | DivEQ
-      { min: 26, max: 27, url: "result-SLC-Trust.html" }, // SLC | Trust
-      { min: 28, max: 32, url: "result-Trust-SLC.html" } // Trust | SLC
+      { min: 24, max: 25, url: "result-food-blogger1.html" }, // SLC | DivEQ
+      { min: 26, max: 27, url: "result-food-blogger2t.html" }, // SLC | Trust
+      { min: 28, max: 32, url: "result-restaurant-critic.html" } // Trust | SLC
     ]
 
     this.currentQuizID = 1;
