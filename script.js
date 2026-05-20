@@ -137,7 +137,7 @@ class Quiz {
 
   run() {
     if (this.QUIZ && this.QUIZ.length && this.RESULT && this.RESULT.length) {
-      this.playMusic();
+      // this.playMusic();
       this.renderQuiz(this.currentQuizID);
     }
   }
