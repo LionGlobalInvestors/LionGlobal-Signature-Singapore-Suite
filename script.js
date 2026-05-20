@@ -388,9 +388,17 @@ function prefetchImages(folderPath, fileNames) {
 
 document.addEventListener("DOMContentLoaded", function () {
   const imageFiles = [
-    // "answers.png",
-    // "boarding_pass.png",
-
+    "quiz-Q1.jpg",
+    "quiz-Q2.jpg",
+    "quiz-Q3.jpg",
+    "quiz-Q4.jpg",
+    "quiz-Q5.jpg",
+    "quiz-Q6.jpg",
+    "quiz-Q7.jpg",
+    "quiz-Q8.jpg",
+    "start.jpg",
+    "results-anim.gif",
+    
   ];
   prefetchImages('/pic/', imageFiles);
   const quiz = new Quiz();
