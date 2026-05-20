@@ -39,7 +39,7 @@ class Quiz {
           ModerateRisk: `No preferences`,
           HighRisk: `Serve immediately when ready!`,
           LeastRisk: `I'll let you know when I am done with each dish`,
-          LowRisk: `lowRisk option`,
+          LowRisk: `However you guys normally do it`,
         },
       },
       {
