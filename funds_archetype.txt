@@ -16,7 +16,7 @@ High Risk: +4
 8 - 11: MMF | Div EQ
 12 - 14: Gold | SLC 
 15 - 17: SDBF | SG Trust
-17 - 19: Div EQ | MMF
+18 - 19: Div EQ | MMF
 20 - 21: SLC | Gold
 22 - 24: SG Trust | SDBF
 
