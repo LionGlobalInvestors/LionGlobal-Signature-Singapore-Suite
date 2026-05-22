@@ -24,10 +24,10 @@
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Food Blogger | Lion Global Investors</title>
+  <title>Classic Lover | Lion Global Investors</title>
 
   <!-- Open Graph Title -->
-  <meta property="og:title" content="Adventurous Foodie | Lion Global Investors">
+  <meta property="og:title" content="Restaurant Critic  | Lion Global Investors">
 
   <!-- Optional: Specify the type of content -->
   <meta property="og:type" content="website">
@@ -39,7 +39,7 @@
   <link rel="prefetch" href="pic/results-anim.gif">
 
   <link rel="prefetch" href="results/result5.png">
-  <link rel="prefetch" href="results/foodie.png">
+  <link rel="prefetch" href="results/critic.png">
 
   <meta property="og:description" content="Here's my Profile! What's yours?" />
   <!-- <meta property="og:image" content="https://lionglobalinvestors.github.io/SG-Gamification/pic/start.jpg" /> -->
@@ -84,9 +84,9 @@
 
           <!-- <img id="random-result" class="main-img ans-banner-img" alt="Restaurant Critic"> -->
 
-          <img id="result-img" class="main-img" src="results/food_blogger1.jpg" alt="Restaurant Critic">
+          <img id="result-img" class="main-img" src="results/classic_lover.jpg" alt="Restaurant Critic">
 
-          <img id="result-img" class="main-img" src="results/breakdown_8.jpg" alt="Gold DivEQ">
+          <img id="result-img" class="main-img" src="results/breakdown_2.jpg" alt="Gold DivEQ">
 
           <!-- <img id="random-result" class="main-img ans-banner-img" alt="Capital Preservation"> -->
 
@@ -99,7 +99,7 @@
               
             </a> -->
 
-            <a href="https://lgi.dzhintl.com/doc/uploads/documents/index.php?type=FS&fid=LLCF&lang=EN" class="btn-one" target="_blank">
+            <a href="https://lgi.dzhintl.com/doc/uploads/documents/index.php?type=FS&fid=ASPGF&lang=EN" class="btn-one" target="_blank">
               <button class="fundCentre-button">
 
                 Enquire about this fund option
@@ -107,7 +107,7 @@
 
             </a>
 
-            <a href="https://lgi.dzhintl.com/doc/uploads/documents/index.php?type=FS&fid=LSED&lang=EN" class="btn-two" target="_blank">
+            <a href="https://lgi.dzhintl.com/doc/uploads/documents/index.php?type=FS&fid=LDAA&lang=EN" class="btn-two" target="_blank">
               <button class="fundCentre-button second-button">
 
                 Enquire about this fund option
@@ -119,7 +119,7 @@
           
         </div>
 
-        <p class="disclaimer" id="disclaimer">This is for information and illustration only, and does not have regard to your specific investment objectives, financial situation, tax position or needs. The information herein is not intended to be and does not constitute financial advice or an offer or solicitation for the purchase or sale of units in any fund. Not all investment ideas are suitable for all investors and no recommendation is given as to the suitability of any funds for any particular investor. Prior to making any investment, you should make your own evaluation or seek independent advice as to whether such investment is suitable for you. Lion Global Investors does not accept any liability for any damages or loss, including loss of profit, whether direct, indirect, economic or consequential, arising from reliance on any information, opinion or estimate herein.</p>
+        <p class="disclaimer" id="disclaimer">^LBMA GOLD PRICE IS A TRADEMARK OF PRECIOUS METALS PRICES LIMITED, LICENSED TO ICE BENCHMARK ADMINISTRATION LIMITED (IBA) AS THE ADMINISTRATOR OF THE LBMA GOLD PRICE, AND IS USED BY LION GLOBAL INVESTORS LIMITED WITH PERMISSION UNDER LICENCE FROM IBA. <br> This is for information and illustration only, and does not have regard to your specific investment objectives, financial situation, tax position or needs. The information herein is not intended to be and does not constitute financial advice or an offer or solicitation for the purchase or sale of units in any fund. Not all investment ideas are suitable for all investors and no recommendation is given as to the suitability of any funds for any particular investor. Prior to making any investment, you should make your own evaluation or seek independent advice as to whether such investment is suitable for you. Lion Global Investors does not accept any liability for any damages or loss, including loss of profit, whether direct, indirect, economic or consequential, arising from reliance on any information, opinion or estimate herein.</p>
         
         <p class="spacer"></p>
       </div>
@@ -152,7 +152,7 @@
 </html>
 
 <script>
-  var finalPic = 'results/save/food_blogger1.jpg';
+  var finalPic = 'results/save/classic_lover.jpg';
   // var selectedPic = null;
 
   // var images = [
@@ -177,7 +177,7 @@ function Transition() {
     ansWrapper.style.alignItems = 'flex-start';
     document.getElementById('disclaimer').style.display = 'block';
     document.getElementById('footer-buttons').style.display = 'block';
-    document.getElementById('capitalFunds').style.display = 'block';
+    // document.getElementById('capitalFunds').style.display = 'block';
   }, 3000);
 }
 
@@ -247,7 +247,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("shareURL").addEventListener("click", async (event) => {
     event.preventDefault(); // prevent default <a> behavior
 
-    const shareMessage = `I am a Food Blogger. What's yours? Find out your Diner Profile here: https://lionglobalinvestors.github.io/SG-Campaign-Gamification/`;
+    const shareMessage = `I am a Classic Lover. What's yours? Find out your Diner Profile here: https://lionglobalinvestors.github.io/LionGlobal-Signature-Singapore-Suite/`;
 
     try {
       await navigator.clipboard.writeText(shareMessage);

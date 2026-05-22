@@ -13,20 +13,10 @@ Low Risk: +2
 Moderate Risk: +3
 High Risk: +4
 
-8 - 11: MMF | SDBF
-12 - 13: SDBF | MMF
-14 - 15: SDBF | Gold
-16 - 17: Gold | SDBF
-18 - 19: Gold | Div EQ
-20 - 21: Div EQ | Gold
-22 - 23: Div EQ | SLC
-24 - 25: SLC | Div EQ
-26 - 27: SLC | Trust
-28 - 32: Trust | SLC //done
+8 - 11: MMF | Div EQ
+12 - 14: Gold | SLC 
+15 - 17: SDBF | SG Trust
+17 - 19: Div EQ | MMF
+20 - 21: SLC | Gold
+22 - 24: SG Trust | SDBF
 
-check which archetype is tied to which result tier
-
-do up mock pages of each result + link to website
-add in mock game art 
-
-q4 highrisk option is wrong

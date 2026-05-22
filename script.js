@@ -6,47 +6,42 @@ class Quiz {
         image: `quiz-Q1.jpg`,
         question: `You step into a restaurant after enduring a storm. How are you feeling?`,
         answers: {
-          HighRisk: `Great! - Revitalised, excited to dig in!`,
-          LeastRisk: `A little shaken by the weather - need to take a minute before you order`,
-          LowRisk: `I'm okay - just waiting to get a seat`,
-          ModerateRisk: `Feeling good - ready to head in and browse the menu`,
+          LeastRisk: `I'm a little shaken`,
+          LowRisk: `I'm okay - Ready to head in`,
+          ModerateRisk: `Great! - looking forward to the meal`,
         },
       },
       {
         image: `quiz-Q2.jpg`,
         question: `Your reservation has been confirmed, but your table is not ready, and the restaurant looks crowded tonight. What's your reaction?`,
         answers: {
-          LeastRisk: `Feel reassured that your spot has been confirmed and wait patiently`,
           LowRisk: `Ask how long the wait will be`,
-          HighRisk: `Insist on being moved to an available seat to start dining immediately`,
           ModerateRisk: `Ask if there are any other alternate seats that are available at the moment`,
+          LeastRisk: `Feel reassured that your spot has been confirmed and wait patiently`,
         },
       },
       {
         image: `quiz-Q3.jpg`,
         question: `The waiter comes over as you take a seat. He asks if you are craving anything and you respond with...`,
         answers: {
-          LowRisk: `Give me the crowd's favourite`,
-          LeastRisk: `Give me the signature dish`,
-          ModerateRisk: `What dish do you recommend?`,
-          HighRisk: `Surprise me!`,
+          LowRisk: `"What do most people order?"`,
+          LeastRisk: `"Let me look at the menu and I'll decide"`,
+          ModerateRisk: `"What is your personal favourite?"`,
         },
       },
       {
         image: `quiz-Q4.jpg`,
         question: `Before leaving, he asks about how you like the pacing of your meals being served, and you answer with...`,
         answers: {
-          ModerateRisk: `No preferences`,
-          HighRisk: `Serve immediately when ready!`,
-          LeastRisk: `I'll let you know when I am done with each dish`,
-          LowRisk: `However you guys normally do it`,
+          ModerateRisk: `"Serve immediately when ready!"`,
+          LeastRisk: `"I'll let you know when I am done with each dish"`,
+          LowRisk: `"However you guys normally do it"`,
         },
       },
       {
         image: `quiz-Q5.jpg`,
         question: `The appetizer has arrived but wait! You notice an unexpected ingredient. What's your reaction?`,
         answers: {
-          HighRisk: `Go for it and enjoy the surprise without hesitation`,
           LeastRisk: `Ask if the dish could be served without it`,
           LowRisk: `Ask the waiter about the taste before deciding`,
           ModerateRisk: `Take a sniff and a small bite to test if you like it`,
@@ -56,20 +51,18 @@ class Quiz {
         image: `quiz-Q6.jpg`,
         question: `You're digging into the main dish but you don't like the taste. What do you do?`,
         answers: {
-          HighRisk: `Let the waiter know and give your feedback`,
           LowRisk: `Ask for garnish`,
           LeastRisk: `Stop eating`,
-          ModerateRisk: `Request for a different dish`,
+          ModerateRisk: `Let the waiter know and give your feedback`,
         },
       },
       {
         image: `quiz-Q7.jpg`,
         question: `You've just finished your main meal, and your stomach starts to feel full...but you have one more dish to go. What would you do?`,
         answers: {
-          HighRisk: `Inform the waiter that you will just pass`,
-          LowRisk: `Ask the waiter to delay the meal - I need time to digest`,
-          LeastRisk: `Ask for a takeaway container - I can just finish it at home!`,
-          ModerateRisk: `Bring forth the dessert! - I can handle it`,
+          LowRisk: `I'll pass`,
+          LeastRisk: `Ask for a takeaway container`,
+          ModerateRisk: `Bring forth the dessert!`,
         },
       },
       {
@@ -77,21 +70,19 @@ class Quiz {
         question: `At the end, the chef asks about how you felt about the overall experience. How would you respond?`,
         answers: {
           LowRisk: `Tell him your favourite part of the experience`,
-          ModerateRisk: `Share what you enjoyed along with some suggestions`,
+          ModerateRisk: `Share what you enjoyed along but still give honest feedback on what could be improved`,
           LeastRisk: `"Everything was good." - You keep things simple and polite`,
-          HighRisk: `Give your honest, detailed feedback and suggest improvements`,
         },
       },
-      // { //only show when got tie-breaker
-      //   image: `quiz-Q9.jpg`,
-      //   question: `You are at the end of your trip, what souvenirs do you bring home? `,
-      //   answers: {
-      //     LeastRisk: `Just the photos/memories`,
-      //     HighRisk: `Unique collectibles / local crafts`,
-      //     ModerateRisk: `Popular local specialties purchased during the tour`,
-      //     LowRisk: `Local snacks for family and friends`,
-      //   },
-      // },
+      { 
+        image: `quiz-Q9.jpg`,
+        question: `The staff asks you to fill in a feedback form. What do you put as your gender? `,
+        answers: {
+          Male: `Male`,
+          Female: `Female`,
+          Shh: `Prefer not to say`,
+        },
+      },
     ].map((v, i) => ({ ...v, id: i + 1 }));
 
     //change this to point system
@@ -119,16 +110,12 @@ class Quiz {
     // }));
 
     this.RESULT = [
-      { min: 8,  max: 11, url: "result-picky-eater.html" }, // MMF | SDBF
-      { min: 12, max: 13, url: "result-menu-planner1.html" }, // SDBF | MMF
-      { min: 14, max: 15, url: "result-menu-planner2.html" }, // SDBF | Gold
-      { min: 16, max: 17, url: "result-classic-lover1.html" }, // Gold | SDBF
-      { min: 18, max: 19, url: "result-classic-lover2.html" }, // Gold | DivEQ
-      { min: 20, max: 21, url: "result-adventurous-foodie1.html" }, // DivEQ | Gold
-      { min: 22, max: 23, url: "result-adventurous-foodie2.html" }, // DivEQ | SLC
-      { min: 24, max: 25, url: "result-food-blogger1.html" }, // SLC | DivEQ
-      { min: 26, max: 27, url: "result-food-blogger2t.html" }, // SLC | Trust
-      { min: 28, max: 32, url: "result-restaurant-critic.html" } // Trust | SLC
+      { min: 8,  max: 11, url: "result-picky-eater.html" }, // MMF | Div EQ
+      { min: 12, max: 14, url: "result-classic-lover.html" }, // Gold | SLC
+      { min: 15, max: 17, url: "result-menu-planner.html" }, // SDBF | SG Trust
+      { min: 18, max: 19, url: "result-adventurous-foodie.html" }, // Div EQ | MMF
+      { min: 20, max: 21, url: "result-food-vlogger.html" }, // SLC | Gold
+      { min: 22, max: 24, url: "result-restaurant-critic.html" }, // SG Trust | SDBF
     ]
 
     this.currentQuizID = 1;
@@ -229,7 +216,9 @@ class Quiz {
       LeastRisk: 1,
       LowRisk: 2,
       ModerateRisk: 3,
-      HighRisk: 4
+      Male: 6,
+      Female: 0,
+      Shh: 0
     };
 
     // calculate total score
