@@ -114,7 +114,7 @@ class Quiz {
       { min: 12, max: 14, url: "result-classic-lover.html" }, // Gold | SLC
       { min: 15, max: 17, url: "result-menu-planner.html" }, // SDBF | SG Trust
       { min: 18, max: 19, url: "result-adventurous-foodie.html" }, // Div EQ | MMF
-      { min: 20, max: 21, url: "result-food-vlogger.html" }, // SLC | Gold
+      { min: 20, max: 21, url: "result-travel-food-vlogger.html" }, // SLC | Gold
       { min: 22, max: 24, url: "result-restaurant-critic.html" }, // SG Trust | SDBF
     ]
 
