@@ -31,7 +31,7 @@ class Quiz {
       },
       {
         image: `quiz-Q4.jpg`,
-        question: `Before leaving, he asks about how you like the pacing of your meals being served, and you answer with...`,
+        question: `Before leaving, he asks how you prefer your meals to be paced, and you reply...`,
         answers: {
           ModerateRisk: `"Serve immediately when ready!"`,
           LeastRisk: `"I'll let you know when I am done with each dish"`,
@@ -49,11 +49,11 @@ class Quiz {
       },
       {
         image: `quiz-Q6.jpg`,
-        question: `You're digging into the main dish but you don't like the taste. What do you do?`,
+        question: `You've taken a few bites of the main dish but you don't enjoy it. What do you do?`,
         answers: {
           LowRisk: `Ask for garnish`,
           LeastRisk: `Stop eating`,
-          ModerateRisk: `Let the waiter know and give your feedback`,
+          ModerateRisk: `Let the waiter know about how you feel`,
         },
       },
       {
@@ -67,10 +67,10 @@ class Quiz {
       },
       {
         image: `quiz-Q8.jpg`,
-        question: `At the end, the chef asks about how you felt about the overall experience. How would you respond?`,
+        question: `At the end of the meal, the chef asks about how you felt about the overall experience. How would you respond?`,
         answers: {
           LowRisk: `Tell him your favourite part of the experience`,
-          ModerateRisk: `Share what you enjoyed along but still give honest feedback on what could be improved`,
+          ModerateRisk: `Share what you enjoyed, while also giving honest feedback on what could be improved`,
           LeastRisk: `"Everything was good." - You keep things simple and polite`,
         },
       },
