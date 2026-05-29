@@ -259,7 +259,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("shareURL").addEventListener("click", async (event) => {
     event.preventDefault(); // prevent default <a> behavior
 
-    const shareMessage = `I am a Menu Planner. What's yours? Find out your Diner Profile here: https://lionglobalinvestors.github.io/LionGlobal-Signature-Singapore-Suite/`;
+    const shareMessage = `I am a Menu Planner. What's yours? Find out your Diner Profile here: https://lionglobalinvestors.github.io/LionGlobal-Signature-Singapore-Suite/index.html`;
 
     try {
       await navigator.clipboard.writeText(shareMessage);
