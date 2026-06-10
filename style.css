@@ -1827,7 +1827,7 @@ and (-webkit-min-device-pixel-ratio: 3) {
     }
 
     .image-btn.two-buttons a:last-child {
-        margin-top: 8px;
+        margin-top: 5px;
     }
 }
 
