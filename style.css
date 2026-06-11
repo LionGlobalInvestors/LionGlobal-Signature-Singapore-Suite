@@ -1753,7 +1753,7 @@ a.fundCentre-button:visited {
 
     /* fix positioning using consistent spacing instead */
     .image-btn.two-buttons a:first-child {
-        margin-bottom: 520px;
+        margin-bottom: 700px;
     }
 
     .image-btn.two-buttons a:last-child {
