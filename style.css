@@ -1555,12 +1555,12 @@ a.fundCentre-button:visited {
 
         /* ---------- TWO-BUTTONS ---------- */
         .image-btn.two-buttons a:first-child {
-            margin-bottom: 650px; /* was 600 */
+            margin-bottom: 450px; /* was 600 */
         }
 
         .image-btn.two-buttons a:last-child {
             /* margin-top: 8px; */
-            position: absolute;
+            /* position: absolute; */
             bottom: 6%;
         }
 
@@ -1749,16 +1749,17 @@ a.fundCentre-button:visited {
     .image-btn.two-buttons {
         gap: clamp(12px, 2.5vh, 18px);
         transform: none; /* IMPORTANT: remove mismatch source */
+        display: flex;
     }
 
     /* fix positioning using consistent spacing instead */
     .image-btn.two-buttons a:first-child {
-        margin-bottom: 700px;
+        margin-bottom: 430px;
     }
 
     .image-btn.two-buttons a:last-child {
         margin-top: 8px;
-        position: absolute;
+        /* position: absolute; */
         bottom: 6%;
     }
 
