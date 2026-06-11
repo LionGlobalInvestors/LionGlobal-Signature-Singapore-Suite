@@ -1298,7 +1298,13 @@ a.fundCentre-button:visited {
     }
 
     .image-btn.two-buttons a:first-child {
-        margin-bottom: 630px;
+        margin-bottom: 700px;
+    }
+
+    .image-btn.two-buttons a:last-child {
+        /* margin-top: 8px; */
+        position: absolute;
+        bottom: 6%;
     }
 
 }
@@ -1549,7 +1555,13 @@ a.fundCentre-button:visited {
 
         /* ---------- TWO-BUTTONS ---------- */
         .image-btn.two-buttons a:first-child {
-            margin-bottom: 420px; /* was 600 */
+            margin-bottom: 650px; /* was 600 */
+        }
+
+        .image-btn.two-buttons a:last-child {
+            /* margin-top: 8px; */
+            position: absolute;
+            bottom: 6%;
         }
 
     }
@@ -1741,11 +1753,13 @@ a.fundCentre-button:visited {
 
     /* fix positioning using consistent spacing instead */
     .image-btn.two-buttons a:first-child {
-        margin-bottom: 360px;
+        margin-bottom: 420px;
     }
 
     .image-btn.two-buttons a:last-child {
         margin-top: 8px;
+        position: absolute;
+        bottom: 6%;
     }
 
     .viewOthers {
