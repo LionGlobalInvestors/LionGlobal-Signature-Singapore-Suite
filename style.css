@@ -1686,7 +1686,7 @@ a.fundCentre-button:visited {
     /* overall container adjustment */
     .image-btn {
         right: 15%;
-        bottom: 3.5%;
+        bottom: 4%;
         gap: 8px;
         transform: translateY(6px);
         /* transform: scale(0.92); */
