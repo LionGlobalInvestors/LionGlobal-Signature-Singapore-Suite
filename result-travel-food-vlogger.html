@@ -155,18 +155,29 @@
 
     <div id="footer-buttons">
 
-      <a id="downloadImage" class="share-links instagram learnMore-button">
+      <button id="downloadImage" class="share-links instagram learnMore-button">
 
         Save
 
-      </a>
+      </button>
+
+      <!-- Notification Popup Screen -->
+      <div id="notificationPopup" class="notification-card">
+        <div class="notification-content">
+          <!-- <span class="notification-icon">🔔</span> -->
+          <p>Your result was saved into your Files app!</p>
+        </div>
+        <!-- Close Button -->
+        <button class="close-btn" onclick="hideNotification()">&times;</button>
+
+      </div>
 
       <!-- share game url -->
-      <a id="shareURL" class="replay-button"> 
+      <button id="shareURL" class="replay-button"> 
 
         Share
 
-      </a>
+      </button>
 
     </div>
 </footer>
@@ -278,5 +289,22 @@ document.addEventListener("DOMContentLoaded", function () {
       alert("Failed to copy URL to clipboard.");
     }
 });
+
+// Function to slide the notification into view
+function showNotification() {
+  const popup = document.getElementById("notificationPopup");
+  popup.classList.add("show");
+  
+  // Optional: Automatically hide the notification after 4 seconds
+  setTimeout(() => {
+    hideNotification();
+  }, 4000);
+}
+
+// Function to slide the notification back off-screen
+function hideNotification() {
+  const popup = document.getElementById("notificationPopup");
+  popup.classList.remove("show");
+}
 
 </script>
