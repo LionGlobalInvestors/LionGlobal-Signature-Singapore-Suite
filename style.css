@@ -746,6 +746,55 @@ a.fundCentre-button:visited {
 
 }
 
+/* Base styling for the notification card */
+.notification-card {
+    position: fixed;
+    top: 20px;
+    right: -350px; /* Initially completely hidden off-screen to the right */
+    width: 300px;
+    background-color: #333;
+    color: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+    z-index: 1000;
+    transition: right 0.4s ease-in-out; /* Smooth sliding animation */
+  }
+  
+  /* Class added by JavaScript to make the card slide into view */
+  .notification-card.show {
+    right: 20px;
+  }
+  
+  .notification-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  /* .notification-icon {
+    font-size: 20px;
+  } */
+  
+  .notification-content p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  /* Close button style inside the card */
+  .close-btn {
+    background: none;
+    border: none;
+    color: #aaa;
+    font-size: 22px;
+    cursor: pointer;
+    line-height: 1;
+  }
+
 
 /************************************/
 /** End of WYS Quiz Ans Page CSS ***/
