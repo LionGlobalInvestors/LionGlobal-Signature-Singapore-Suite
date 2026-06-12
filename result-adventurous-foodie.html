@@ -280,4 +280,21 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+// Function to slide the notification into view
+function showNotification() {
+  const popup = document.getElementById("notificationPopup");
+  popup.classList.add("show");
+  
+  // Optional: Automatically hide the notification after 4 seconds
+  // setTimeout(() => {
+  //   hideNotification();
+  // }, 4000);
+}
+
+// Function to slide the notification back off-screen
+function hideNotification() {
+  const popup = document.getElementById("notificationPopup");
+  popup.classList.remove("show");
+}
+
 </script>
