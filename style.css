@@ -749,7 +749,7 @@ a.fundCentre-button:visited {
 /* Base styling for the notification card */
 .notification-card {
     position: fixed;
-    top: 20px;
+    top: 25px;
     /* right: -350px; Initially completely hidden off-screen to the right */
     right: 20px;
     width: 300px;
