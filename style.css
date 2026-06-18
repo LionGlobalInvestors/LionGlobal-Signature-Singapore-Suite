@@ -766,16 +766,16 @@ a.fundCentre-button:visited {
     z-index: 1000;
     transition: right 0.4s ease-in-out; /* Smooth sliding animation */
   
-    transform: translateX(calc(100% + 40px));
+    transform: translateX(320px);
     
-    will-change: transform;
+    /* will-change: transform; */
 
 }
   
   /* Class added by JavaScript to make the card slide into view */
   .notification-card.show {
     /* right: 20px; */
-    transform: translateX(0);
+    transform: translate3d(320px);
   }
   
   .notification-content {
