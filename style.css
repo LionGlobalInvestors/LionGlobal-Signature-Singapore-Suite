@@ -767,6 +767,8 @@ a.fundCentre-button:visited {
     transition: transform 0.4s ease-in-out; /* Smooth sliding animation */
   
     transform: translateX(320px);
+
+    display: none;
     
     /* will-change: transform; */
 
@@ -1442,6 +1444,14 @@ a.fundCentre-button:visited {
 
     .fundCentre-button {
         font-size: 20px;
+    }
+
+    .notification-card {
+        display: flex;
+    }
+
+    .notification-card.show {
+        transform: translateX(0);
     }
 
 }
