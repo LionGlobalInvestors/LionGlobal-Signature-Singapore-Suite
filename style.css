@@ -68,6 +68,37 @@
     text-decoration: none;
 }
 
+.begin-button {
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    height: 45px;
+    width: 300px;
+    border-radius: 12px;
+    background-color: #89264f;
+    color: white;
+    text-align: center;
+
+    position: relative;
+    margin-top: 110%;
+
+    /* left: 50%; */
+    transform: translateX(-27%);
+
+    /* width: auto; */
+
+    border: none;
+}
+
+.begin-button:hover {
+    background-color: #e18698;
+    color: black;
+}
+
+.begin-button a{
+    text-decoration: none;
+}
+
 .link-to-lets-fly {
 
     position: absolute;
