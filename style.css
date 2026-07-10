@@ -746,6 +746,10 @@ a.fundCentre-button:visited {
 
 }
 
+.viewOthers a:link{
+    text-decoration: none;
+}
+
 /* Base styling for the notification card */
 .notification-card {
     position: fixed;
