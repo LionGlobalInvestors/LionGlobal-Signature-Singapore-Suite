@@ -79,7 +79,7 @@
     color: white;
     text-align: center;
 
-    position: relative;
+    position: flex;
     margin-top: 110%;
 
     /* left: 50%; */
