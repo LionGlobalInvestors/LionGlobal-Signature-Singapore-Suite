@@ -122,6 +122,48 @@ class Quiz {
     this.userAnswers = new Array();
   }
 
+  // Call this method when the user answers the final question
+  finishQuiz() {
+    // 1. Calculate the final score based on your userAnswers array logic
+    // (Modify this math if your answers hold different point values)
+    const totalScore = this.userAnswers.reduce((sum, current) => sum + Number(current), 0);
+
+    // 2. Scan the constructor array instantly to find the matching URL
+    const matched = this.RESULT.find(item => totalScore >= item.min && totalScore <= item.max);
+    
+    // Fallback destination in case the score falls outside 8-24
+    const targetUrl = matched ? matched.url : "result-picky-eater.html";
+
+    // 3. Set a 3-second safety timer. Bypasses the server if traffic causes a freeze.
+    const trafficTimeout = setTimeout(() => {
+        console.warn("Traffic overload! Forcing local redirect to preserve user experience.");
+        window.location.href = targetUrl;
+    }, 3000);
+
+    // 4. Try to save the quiz data to your backend server in the background
+    fetch('YOUR_SERVER_ENDPOINT_URL', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ 
+            quizID: this.currentQuizID, 
+            score: totalScore,
+            answers: this.userAnswers 
+        })
+    })
+    .then(() => {
+        // Server accepted data successfully. Clear the timer and go to the page.
+        clearTimeout(trafficTimeout);
+        window.location.href = targetUrl;
+    })
+    .catch((error) => {
+        // Server failed, crashed, or dropped. Clear the timer and go to the page anyway.
+        clearTimeout(trafficTimeout);
+        console.error("Server down due to traffic. Loading page locally:", error);
+        window.location.href = targetUrl;
+    });
+}
+}
+
   run() {
     if (this.QUIZ && this.QUIZ.length && this.RESULT && this.RESULT.length) {
       // this.playMusic();
