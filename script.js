@@ -115,7 +115,7 @@ class Quiz {
       { min: 15, max: 17, url: "result-menu-planner.html" }, // SDBF | SG Trust
       { min: 18, max: 19, url: "result-adventurous-foodie.html" }, // Div EQ | MMF
       { min: 20, max: 21, url: "result-travel-food-vlogger.html" }, // SLC | Gold
-      { min: 22, max: 24, url: "result-restaurant-critic.html" }, // SG Trust | SDBF
+      { min: 22, max: 30, url: "result-restaurant-critic.html" }, // SG Trust | SDBF
     ]
 
     this.currentQuizID = 1;
@@ -238,6 +238,9 @@ class Quiz {
       location.href = result.url;
     } else {
       console.error("No matching result found for score:", totalScore);
+
+      // fallback
+      location.href = "result-picky-eater.html";
     }
     
   }
