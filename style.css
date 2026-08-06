@@ -44,7 +44,7 @@
 
 .start-button {
     font-family: 'Arial', sans-serif;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 600;
     height: 45px;
     width: 140px;
@@ -52,6 +52,8 @@
     background-color: white;
 
     border: none;
+
+    animation: pulse 1s infinite;
 }
 
 .start-button:hover {
